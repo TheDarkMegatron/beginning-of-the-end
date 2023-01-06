@@ -1,0 +1,52 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Georgia;
+}
+
+.f {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.filters input {
+    border-radius: 5px;
+    border: 1px solid aquamarine;
+}
+
+.search {
+    padding: 8px
+}
+
+.container {
+    text-align: center;
+    min-width: 100%;
+    min-height: 500px;
+    background-color: #e7e7e7;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    display: inline;
+    float: left;
+}
+
+table {
+    background-color: #7e7d7d;
+    margin: auto;
+}
+
+td{
+    text-align: center;
+    width: 80px;
+}
+table tbody {
+}
+
+input[type=text] {
+    width: 100px
+}
+
+button {
+    border: 1px solid aquamarine;;
+    width: 100px;
+    border-radius: 5px
+}
+
