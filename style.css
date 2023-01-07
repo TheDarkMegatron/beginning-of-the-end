@@ -1,43 +1,78 @@
 body {
     background-color: #f0f2f5;
-    font-family: Georgia;
+    font-family: Arial;
 }
 
 .f {
     display: inline-block;
     padding-left: 20px;
+    color: white
+}
+.filters {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .filters input {
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 5px;
-    border: 1px solid aquamarine;
+    color: rgb(53, 53, 53);
 }
 
 .search {
-    padding: 8px
+    padding: 20px
 }
 
 .container {
     text-align: center;
     min-width: 100%;
-    min-height: 500px;
-    background-color: #e7e7e7;
-    border: 1px solid aquamarine;
+    min-height: 700px;
+    background-color: #3d3e40;
     border-radius: 5px;
     display: inline;
     float: left;
 }
 
 table {
+    padding: auto;
     background-color: #7e7d7d;
+    border: 1px solid #000000;
     margin: auto;
+    color: White;
+}
+
+table caption{
+    padding-bottom: 10px;
+    font-size: 20px;
 }
 
 td{
     text-align: center;
     width: 80px;
 }
-table tbody {
+
+nav {
+    background-color: #3d3e40;
+    border-radius: 5px
+}
+
+
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+ul li {
+    width: 100px;
+    padding: 10px 12px 12px;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial;
+	text-decoration: none;
+	display: block;
 }
 
 input[type=text] {
@@ -45,8 +80,18 @@ input[type=text] {
 }
 
 button {
-    border: 1px solid aquamarine;;
+    background-color: #3d3e40;
+    font-family: Arial;
+    color: white;
     width: 100px;
     border-radius: 5px
 }
 
+ul li:hover, button:hover {
+	background-color: #b00000;
+}
+
+.bot {
+    background-color: #3d3e40;
+    border: none;
+}
