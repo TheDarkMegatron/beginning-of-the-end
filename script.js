@@ -65,7 +65,7 @@ function addElementWindow () {
         }
         arrs_.push('');
 
-        addElementTable(arrs_)
+        addElementTable(arrs_);
     }
     form.appendChild(button);
 
@@ -77,7 +77,7 @@ function addElementWindow () {
         let form = document.getElementsByClassName('window');
         var arrs = form[0].querySelectorAll('input');
         for (let i of arrs) {
-            i.value = ''
+            i.value = '';
         }
     }
 
