@@ -49,6 +49,10 @@ table caption{
     font-size: 20px;
 }
 
+tbody td{
+    border-bottom: 1px solid #000000;
+}
+
 td{
     text-align: center;
     width: 80px;
@@ -93,11 +97,6 @@ ul li:hover, button:hover {
 	background-color: #b00000;
 }
 
-.bot {
-    background-color: #3d3e40;
-    border: none;
-}
-
 .window {
     top: 30%;
     left: 30%;
@@ -130,4 +129,19 @@ ul li:hover, button:hover {
 
 .window button {
     position: static;
+}
+
+.window2 {
+    min-height: 150px;
+    min-width: 200px;
+    top: 30%;
+    left: 30%;
+    background-color: #d9d9da;
+    border-radius: 5px;
+    position: fixed;
+    text-align: center
+}
+
+.window2 input {
+    width: 100px;
 }
