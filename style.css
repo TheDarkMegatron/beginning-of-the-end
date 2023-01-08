@@ -1,10 +1,12 @@
 body {
     background-color: #f0f2f5;
     font-family: Arial;
+    font-weight: bold;
 }
 
 .f {
     display: inline-block;
+    padding-top: 20px;
     padding-left: 20px;
     color: white
 }
@@ -94,4 +96,38 @@ ul li:hover, button:hover {
 .bot {
     background-color: #3d3e40;
     border: none;
+}
+
+.window {
+    top: 30%;
+    left: 30%;
+    background-color: #d9d9da;
+    border-radius: 5px;
+    position: fixed;
+    width: auto;
+    text-align: center
+}
+
+.window div {
+    position: left;
+    padding: 5px;
+}
+
+.window label {
+    width: 100px;
+    color:rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 13px;
+	font-weight: bold;
+    padding-right: 20px;
+}
+
+.window input {
+    position: right;
+    height: 5px;
+    width: 100px;
+}
+
+.window button {
+    position: static;
 }
