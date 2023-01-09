@@ -132,16 +132,12 @@ ul li:hover, button:hover {
 }
 
 .window2 {
-    min-height: 150px;
-    min-width: 200px;
+    width: 250px;
+    height: 75px;
     top: 30%;
     left: 30%;
     background-color: #d9d9da;
     border-radius: 5px;
     position: fixed;
-    text-align: center
-}
-
-.window2 input {
-    width: 100px;
+    text-align: center;
 }
