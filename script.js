@@ -10,6 +10,17 @@ function addElementTable(arr) {
     tbody.appendChild(tr);
 }
 
+function delElementTable(pos) {
+    if (pos == 0) return 0;
+    try {
+        let tr = document.querySelectorAll('tr');
+        tr[pos].remove();
+    }
+    catch (TypeError) {
+        return 0;
+    }
+}
+
 function block() {
     let but = document.querySelectorAll('button');
     for (let i of but) {
@@ -63,7 +74,6 @@ function addElementWindow () {
         for (let i of arrs) {
             arrs_.push(i.value);
         }
-        arrs_.push('');
 
         addElementTable(arrs_);
     }
@@ -95,12 +105,15 @@ function addElementWindow () {
 }
 
 /*Для кнопки удалить */
-function addElvementWindowDel () {
+function addElementWindowDel () {
     block();
 
     let form = document.createElement('div');
     form.className = 'window2';
 
+    let label = document.createElement('label');
+    label.textContent = 'Позиция:';
+    form.appendChild(label);
     let input = document.createElement('input');
     form.appendChild(input);
     let button = document.createElement('button');
@@ -108,6 +121,27 @@ function addElvementWindowDel () {
     button.setAttribute('type', 'submit');
     form.appendChild(button);
 
+    button.onclick = function() {
+        delElementTable(input.value);
+        form.remove();
+        unblock();
+    }
+
     var buttons = document.getElementsByClassName('buttons');
     buttons[0].appendChild(form);
 }
+
+/* Для кнопки поиск
+function addElementWindowSearch() {
+    let arrInput = document.querySelectorAll('input');
+    let arrTr = document.querySelectorAll('tr');
+    if (arrTr.length == 1) return 0;
+    for (i = 1; i < 8; i++) {
+        console.log(arrInput[i].value);
+        if (arrInput[i].value == '') continue;
+        for(let t of arrTr) {
+            if (!t.textContent.includes((arrInput[i].value))) t.remove();
+        }
+    }
+}
+*/
